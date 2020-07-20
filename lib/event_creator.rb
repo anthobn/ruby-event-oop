@@ -1,5 +1,5 @@
 class EventCreator
-  attr_accessor :start_date, :duration, :title, :emails, :emails_array #A virer après !!
+  attr_accessor :event
   def initialize
     puts "Bonjour, bienvenue dans l'interface de création d'évènement."
     puts "Quel est le nom de l'évènement ?"
@@ -23,11 +23,12 @@ class EventCreator
   end
 
   def create_event()
-    Event.new(@date, @duration, @title, @emails_array)
+    @event = Event.new(@start_date, @duration, @title, @emails_array)
+    confirm_and_show_envent()
   end
 
   def confirm_and_show_envent
     puts "L'évènement à bien été crée !"
-    #affiche en _s
+    @event.to_s
   end
 end
