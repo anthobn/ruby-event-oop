@@ -2,4 +2,4 @@
 
 # Calendrier
 
-Cet exercice permet de s'entrainer sur la POO avec Ruby en créant un agenda qui permet de gérer des évènements
+Cet exercice permet de s'entrainer sur la POO avec Ruby en créant un agenda qui permet de gérer des évènements.
